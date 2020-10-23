@@ -1,0 +1,6 @@
+[caps]
+browserName = "Chrome"
+platformName = "Android"
+deviceName = 'emulator-5554'
+platformVersion = '8.1'
+autoGrantPermissions = true
