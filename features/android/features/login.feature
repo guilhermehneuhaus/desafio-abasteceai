@@ -4,8 +4,13 @@ Funcionalidade: Realizar login na loja
   Para realizar compras com meus dados
 
   @login
-  Cenário: Realizar login no site da loja
+  Esquema do Cenário: Realizar login no site da loja
     Dado que estou na página Inicial da loja
     Quando eu for direcionado para tela de login
-    E preencher com o usuário "guilherme.neuhaus@compasso.com.br" e a senha "vivi1404"
-    Entao devo ter feito o login com sucesso
+    E preencher com o usuário "<user>" e a senha "<password>"
+    Entao o login deve ou não ser feito "<loged>"
+
+    Exemplos:
+    | user                              | password | loged   |
+    | guilherme.neuhaus@compasso.com.br | vivi1404 | Success |
+    | guilherme.neuhaus@compasso.com.br | vivi1405 | Error   |

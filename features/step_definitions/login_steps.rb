@@ -16,6 +16,10 @@ E('preencher com o usuário {string} e a senha {string}') do |string1, string2|
   @login.tocar_botao_id('SubmitLogin')
 end
 
-Entao ('devo ter feito o login com sucesso') do
-  @login.is_loged
+Entao ('o login deve ou não ser feito {string}') do |loged|
+  if loged == 'Success'
+    @login.is_loged
+  elsif
+    @login.not_loged
+  end
 end
