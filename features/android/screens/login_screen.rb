@@ -22,5 +22,9 @@ class LoginScreen < BaseScreen
     def is_loged
       verifica_tela_css("[title*='View my customer account']")
     end
+
+    def not_loged
+      verifica_tela_css("div[class*='alert alert-danger']")
+    end
   end
   

@@ -32,5 +32,4 @@ class BaseScreen
     button = $driver.find_element(:id, id)
     button.click
   end
-
 end
